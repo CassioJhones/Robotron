@@ -1,18 +1,16 @@
 // buscar o id robotron e esperar o click e entao chamar a funcao dizOi 
-const robotron =  document.querySelector("#robotron");
+const subtrair = document.querySelector('#subtrair');
+const somar = document.querySelector('#somar');
+const braco = document.querySelector('#braco');
 
-robotron.addEventListener("click", function () {
-    console.log('-- ATIVAÇÃO CONCLUIDA --')
-    
-});//oque esperar/oque fazer
+somar.addEventListener("click",  (evento) => {
+    braco.value = parseInt(braco.value) +1
+});
 
-function dizOi () {//funcao que mostra a mensagem no console
-    console.log('-- ROBO DESATIVADO --')
-    console.log('-- Faça a ativação --')
-}
-
-dizOi();
-
-
+subtrair.addEventListener("click", (evento) => {
+    braco.value = parseInt(braco.value) -1
+})
 
 // function (){} anonima pode ser escrita  como () =>{ }
+
+// addEventListener precisa dos parametros (oque esperar, oque fazer)
