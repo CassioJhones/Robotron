@@ -3,7 +3,7 @@
 
 Ele começa declarando duas variáveis, "**controle**" e "**estatisticas**", que são usadas para selecionar elementos da página usando o método "**querySelectorAll**".
 Esses elementos são usados para controlar a manipulação de dados da página. Depois foi declarado um objeto "**peças**", que contém informações das diferentes partes do robo.
-```
+```Javascript
 const controle = document.querySelectorAll("[data-controle]")
 const estatisticas = document.querySelectorAll('[data-estatistica')
 const pecas = {
@@ -43,7 +43,7 @@ const pecas = {
 
 Em seguida, a variável "**controle**" é percorrida usando um loop "**forEach**", e um evento '**click**' é adicionado a cada elemento. Quando um elemento é clicado, a função "**manipulaDados**" é chamada com dois argumentos, "**operação**" e "**controle**", que são usados para manipular os dados na página. A função "**atualizaEstatisticas**" é chamada com um argumento "**peça**" que é usado para atualizar as estatísticas na página.
 
-```
+```Javascript
 controle.forEach(  (elemento) => {
     elemento.addEventListener('click', (evento) => {
         manipulaDados(evento.target.dataset.controle, evento.target.parentNode);
