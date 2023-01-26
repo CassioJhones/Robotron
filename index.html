@@ -20,8 +20,7 @@
         <section class="robotron"> <!-- IMAGEM DO ROBO -->
             <img id="robotron" class="robo" src="img/robotron.png" alt="Robotron">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
-        </section>
-
+        </section> <!-- IMAGEM DO ROBO -->
 
 
         <section class="box estatisticas"> <!-- ESTATISTICAS DO ROBO -->
@@ -49,8 +48,7 @@
                     <p class="estatistica-numero">597</p>
                 </div>
             </div>
-        </section>
-
+        </section>  <!-- ESTATISTICAS DO ROBO -->
 
 
         <section class="equipamentos"> <!-- EQUIPAMENTOS DO ROBO -->
@@ -59,66 +57,62 @@
                     <div class="peca">
                         <label for="" class="peca-titulo">Braços</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste" id="subtrair">-</buttom>
-                            <input type="text" class="controle-contador" value="00" id="braco">
-                            <buttom class="controle-ajuste" id="somar">+</buttom>
+                            <buttom class="controle-ajuste" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador >
+                            <buttom class="controle-ajuste" data-controle="+">+</buttom>
                         </div>
                     </div>
 
-<!-- IMAGEM DO ROBO -->
+<!-- propriedade data-contador esta sem valor / solta no codigo podendo ser usada no JS  -->
 
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Blindagem</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+">+</buttom>
                         </div>
                     </div>
-
 
 
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Núcleos</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+">+</buttom>
                         </div>
                     </div>
-
 
 
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Pernas</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+">+</buttom>
                         </div>
                     </div>
-
 
 
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Foguetes</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" data-controle="-">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+">+</buttom>
                         </div>
                     </div>
-
 
 
                 </div>
                 <input type="submit" value="Iniciar produção" class="producao" id="producao">
             </form>
-        </section>
+        </section> <!-- EQUIPAMENTOS DO ROBO -->
 
 
     </main>
