@@ -6,6 +6,9 @@
 
 * {
     box-sizing: border-box;
+    user-select: none;
+    /* IMPEDE A SELEÇÃO DO USUARIO */
+
 }
 
 body {
@@ -17,7 +20,9 @@ body {
     font-weight: 300;
 }
 
-body, input {
+body,
+input,
+button {
     font-family: 'Teko', sans-serif;
 }
 
@@ -29,6 +34,7 @@ main {
     gap: 1vw;
 }
 
+/* ---IMAGEM DO ROBO------IMAGEM DO ROBO------IMAGEM DO ROBO--- */
 .robotron {
     background: url(../img/estrutura.png) no-repeat;
     background-position: center center;
@@ -38,9 +44,9 @@ main {
 }
 
 .robo {
-    height: 110%;
+    height: 100%;
     z-index: 1;
-    position: absolute;
+    position: relative;
     left: -20%;
     top: -5%;
 }
@@ -55,24 +61,25 @@ main {
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: rgba(255,255,255,0.8)
+    color: rgba(255, 255, 255, 0.8)
 }
 
+/* ---IMAGEM DO ROBO------IMAGEM DO ROBO------IMAGEM DO ROBO--- */
 .box {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-    border-left: 5px solid var(--main-cinza);
     height: 80%;
 }
 
-/****************************** Equipamentos *****/
+/*--EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS--*/
 
 .equipamentos {
     flex-basis: 32%;
 }
 
 .montador {
-    height: 100%;;
+    height: 100%;
+    ;
 }
 
 .montador-conteudo {
@@ -148,9 +155,11 @@ main {
     color: var(--main-branco)
 }
 
+/*--EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS--*/
 
 
-/****************************** Estatísticas *****/
+
+/* --ESTATISTICA----ESTATISTICA----ESTATISTICA----ESTATISTICA-- */
 .estatisticas {
     flex-basis: 23%;
     padding: 2em 2em 0;
@@ -209,10 +218,50 @@ main {
     margin: 10px 0 0;
 }
 
+/* --ESTATISTICA----ESTATISTICA----ESTATISTICA----ESTATISTICA-- */
+
+
+
+.lista-cores {
+    /* div */
+    /* div */
+    /* div */
+    margin-top: -200px;
+    margin-left: 45%;
+    margin-right: 25%;
+    display: block;
+    padding: 15px;
+}
+
+.cores-btn {
+    background-color: rgba(9, 9, 9, 0.676);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    font-size: 30px;
+    margin: 4px;
+    color: white;
+    border-color: #6bb6f8;
+}
+
+.cores-btn:hover {
+    background-color: rgb(2, 82, 153);
+    color: white;
+    text-align: center;
+}
+
+.cores-btn:active {
+    background-color: rgb(14, 13, 13);
+}
+
+
 @media screen and (max-width: 1600px) {
-    body { 
+    body {
         font-size: 14px;
     }
+
     main {
         width: 90vw;
         height: 80vh;
@@ -221,7 +270,7 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-    body { 
+    body {
         font-size: 13px;
     }
 
