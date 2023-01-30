@@ -57,3 +57,15 @@ function atualizaEstatisticas(peca) {
     } )
 }
 
+
+//  COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO
+const buttons = document.querySelectorAll(".cores-btn");
+const robotronImage = document.querySelector("#robotron");
+
+buttons.forEach(button => {
+  button.addEventListener("click", event => {
+    const color = event.target.dataset.cor;
+    robotronImage.src = `img/${color}.png`;
+  });
+});
+// COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO
