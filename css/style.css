@@ -46,7 +46,7 @@ main {
 .robo {
     height: 100%;
     position: relative;
-    left: -20%;
+    left: 10%;
     top: -5%;
 }
 
@@ -56,7 +56,7 @@ main {
     font-size: 130px;
     position: absolute;
     bottom: 7rem;
-    left: -3rem;
+    left: 10%;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
