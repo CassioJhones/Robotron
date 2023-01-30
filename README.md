@@ -1,6 +1,8 @@
 # Robotron-2023
 >Este código é uma implementação de JavaScript que manipula elementos de uma página HTML
 
+
+<img src="full.png">
 Ele começa declarando duas variáveis, "**controle**" e "**estatisticas**", que são usadas para selecionar elementos da página usando o método "**querySelectorAll**".
 Esses elementos são usados para controlar a manipulação de dados da página. Depois foi declarado um objeto "**peças**", que contém informações das diferentes partes do robo.
 ```Javascript
