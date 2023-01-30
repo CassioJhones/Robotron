@@ -143,15 +143,17 @@ main {
     text-transform: uppercase;
     padding: 0.2em 1em;
     float: right;
-    border: 3px solid var(--main-branco);
-    background: var(--main-branco);
-    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    border: 3px solid #6bb6f8;
+    background-color: rgba(9, 9, 9, 0.676);
     cursor: pointer;
+    color: white;
+    border-radius: 8px;
 }
 
 .producao:hover {
-    background: var(--main-preto);
-    color: var(--main-branco)
+    background-color: rgb(2, 82, 153);
+    color: white;
+    text-align: center;
 }
 
 /*--EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS--*/
@@ -172,8 +174,8 @@ main {
 }
 
 .estatistica-titulo {
-    font-size: 1.5em;
-    border-bottom: 1px solid var(--main-cinza);
+    font-size: 2.2em;
+    border-bottom: 3px solid var(--main-cinza);
     flex-basis: 40%;
     text-transform: uppercase;
     order: 1
@@ -241,7 +243,7 @@ main {
     font-size: 30px;
     margin: 4px;
     color: white;
-    border-color: #6bb6f8;
+    border: 2px solid #6bb6f8;
 }
 
 .cores-btn:hover {
