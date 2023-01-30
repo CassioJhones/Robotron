@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
-<head>
+<head> <!-- --CABEÇALHO----CABEÇALHO----CABEÇALHO-- -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
-    <title>-Robotron 2000-</title>
+    <title>-Robotron 2023-</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet">
-</head>
+</head> <!-- --CABEÇALHO----CABEÇALHO----CABEÇALHO-- -->
 
 <body>
     <main>
-       
-        <section class="robotron"> <!-- IMAGEM DO ROBO -->
-            <img id="robotron" class="robo" src="img/robotron.png" alt="Robotron">
-            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
-        </section> <!-- IMAGEM DO ROBO -->
 
+        <section class="robotron"> <!-- --IMAGEM----IMAGEM----IMAGEM-- -->
+            <img id="robotron" class="robo" src="img/0.png" alt="Robotron">
+            <figcaption class="titulo">ROBOTRON <br>2023</figcaption>
+        </section> <!-- --IMAGEM----IMAGEM----IMAGEM-- -->
 
-        <section class="box estatisticas"> <!-- ESTATISTICAS DO ROBO -->
+        <section class="box estatisticas"> <!-- --ESTATISTICAS----ESTATISTICAS----ESTATISTICAS-- -->
             <div class="estatistica">
                 <p class="estatistica-titulo">Força</p>
                 <div class="estatistica-valor">
@@ -33,7 +32,7 @@
             <div class="estatistica">
                 <p class="estatistica-titulo">Poder</p>
                 <div class="estatistica-valor">
-                    <p class="estatistica-numero"  data-estatistica="poder">0</p>
+                    <p class="estatistica-numero" data-estatistica="poder">0</p>
                 </div>
             </div>
             <div class="estatistica">
@@ -48,22 +47,21 @@
                     <p class="estatistica-numero" data-estatistica="velocidade">0</p>
                 </div>
             </div>
-        </section>  <!-- ESTATISTICAS DO ROBO -->
+        </section> <!-- --ESTATISTICAS----ESTATISTICAS----ESTATISTICAS----ESTATISTICAS-- -->
 
-
-        <section class="equipamentos"> <!-- EQUIPAMENTOS DO ROBO -->
+        <section class="equipamentos"> <!--EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS-- -->
             <form action="" class="montador">
                 <div class="box montador-conteudo">
                     <div class="peca">
                         <label for="" class="peca-titulo">Braços</label>
                         <div class="controle">
                             <buttom class="controle-ajuste" data-controle="-" data-peca="bracos">-</buttom>
-                            <input type="text" class="controle-contador" value="00" data-contador >
+                            <input type="text" class="controle-contador" value="00" data-contador>
                             <buttom class="controle-ajuste" data-controle="+" data-peca="bracos">+</buttom>
                         </div>
                     </div>
 
-<!-- propriedade data-contador esta sem valor / solta no codigo podendo ser usada no JS  -->
+                    <!-- propriedade data-contador esta sem valor / solta no codigo podendo ser usada no JS  -->
 
                     <hr class="linha">
                     <div class="peca">
@@ -112,10 +110,23 @@
                 </div>
                 <input type="submit" value="Iniciar produção" class="producao" id="producao">
             </form>
-        </section> <!-- EQUIPAMENTOS DO ROBO -->
-
+        </section> <!-- EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS----EQUIPAMENTOS---->
 
     </main>
+
+    <footer> <!-- --CORES----CORES----CORES----CORES-- -->
+
+        <div class="lista-cores">
+            <button class="cores-btn">Azul</button>
+            <button class="cores-btn">Vermelho</button>
+            <button class="cores-btn">Preto</button>
+            <button class="cores-btn">Rosa</button>
+            <button class="cores-btn">Amarelo</button>
+            <button class="cores-btn">Branco</button>
+        </div>
+
+    </footer> <!-- --CORES----CORES----CORES----CORES-- -->
+
     <script src="main.js"></script>
 </body>
 
