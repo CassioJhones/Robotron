@@ -65,7 +65,7 @@ const robotronImage = document.querySelector("#robotron");
 buttons.forEach(button => {
   button.addEventListener("click", event => {
     const color = event.target.dataset.cor;
-    robotronImage.src = `img/${color}.png`;
+    robotronImage.src = `${color}.png`;
   });
 });
 // COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO--COLORAÇÃO
